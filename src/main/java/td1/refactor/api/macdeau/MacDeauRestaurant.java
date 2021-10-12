@@ -28,7 +28,7 @@ public class MacDeauRestaurant implements BurgerRestaurant {
 
     @Override
     public BurgerCook order_personal(Size size, MeatType type) {
-        return 0;
+        return null;
     }
 
 }

@@ -14,14 +14,17 @@ public abstract class Burger implements FoodProduct {
 
     @Override
     public double calories() {
+        return 0;
     }
 
     @Override
     public double weight() {
+        return 0;
     }
 
     @Override
     public double price() {
+        return 0;
     }
 
     @Override

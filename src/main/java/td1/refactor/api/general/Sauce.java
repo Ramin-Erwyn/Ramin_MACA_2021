@@ -30,5 +30,6 @@ public class Sauce implements FoodProduct {
 
     @Override
     public String toString() {
+        return null;
     }
 }

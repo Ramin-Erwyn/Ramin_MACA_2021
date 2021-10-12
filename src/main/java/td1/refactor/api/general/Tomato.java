@@ -26,6 +26,6 @@ public class Tomato implements FoodProduct {
 
     @Override
     public String toString() {
-        return 0;
+        return null;
     }
 }

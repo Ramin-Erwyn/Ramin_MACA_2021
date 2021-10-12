@@ -26,7 +26,7 @@ public class DeepFriedOnions implements FoodProduct {
 
     @Override
     public String toString() {
-        return ;
+        return null;
     }
 
 }

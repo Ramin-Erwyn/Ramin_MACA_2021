@@ -50,7 +50,7 @@ public final class Repertoire extends ComposantImpl implements Composite<Composa
     }
 
     @Override
-    public boolean removeChild(Composant composant) {
+    public void removeChild(Composant composant) {
         this.children.remove(composant);
     }
 
@@ -67,6 +67,6 @@ public final class Repertoire extends ComposantImpl implements Composite<Composa
 
     @Override
     public String toString() {
-        return super.toString();
+        return getContent();
     }
 }

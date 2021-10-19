@@ -6,7 +6,7 @@ public interface Composite<T>{
 
      List<T> getChildren();
      void addchild(T t);
-     boolean removeChild(T t);
+     void removeChild(T t);
      boolean removeChildren(List<T> t);
 
 }

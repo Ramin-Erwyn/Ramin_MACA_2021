@@ -2,7 +2,8 @@ package td2.filesystem;
 
 public class Fichier extends ComposantImpl implements Composant {
     public StringBuilder content;
-    protected Fichier(String name,Owner owner) {
+
+    protected Fichier(String name, Owner owner) {
         super(name, owner);
         content = new StringBuilder();
     }
@@ -18,7 +19,8 @@ public class Fichier extends ComposantImpl implements Composant {
     }
 
     @Override
-    public void appendContent( String content) {  this.content.append(content);
+    public void appendContent(String content) {
+        this.content.append(content);
 
     }
 
@@ -29,5 +31,6 @@ public class Fichier extends ComposantImpl implements Composant {
 
     @Override
     public String toString() {
-        return getContent()
+        return getContent();
+    }
 }

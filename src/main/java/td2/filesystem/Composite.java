@@ -5,7 +5,7 @@ import java.util.List;
 public interface Composite<T>{
 
      List<T> getChildren();
-     void addchild(T t);
+     void addChild(T t);
      void removeChild(T t);
      boolean removeChildren(List<T> t);
 

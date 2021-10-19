@@ -44,10 +44,10 @@ public final class Repertoire extends ComposantImpl implements Composite<Composa
     }
 
     @Override
-    public void addchild(Composant composant) {
+    public void addChild(Composant composant) {
         this.children.add(composant);
-
     }
+
 
     @Override
     public void removeChild(Composant composant) {

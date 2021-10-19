@@ -2,22 +2,23 @@ package td2.filesystem;
 
 public class Fichier extends ComposantImpl implements Composant {
     public StringBuilder content;
-    protected Fichier(String name) {
-        super(name);
+    protected Fichier(String name,Owner owner) {
+        super(name, owner);
+        content = new StringBuilder();
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return this.content.length();
     }
 
     @Override
     public String getContent() {
-        return null;
+        return this.content.toString();
     }
 
     @Override
-    public void appendContent() {
+    public void appendContent( String content) {  this.content.append(content);
 
     }
 
@@ -28,8 +29,5 @@ public class Fichier extends ComposantImpl implements Composant {
 
     @Override
     public String toString() {
-        return "Fichier{" +
-                "content=" + content +
-                '}';
-    }
+        return getContent()
 }

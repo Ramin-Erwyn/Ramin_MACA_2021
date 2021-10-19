@@ -5,11 +5,11 @@ public interface Composant {
 
     public abstract String getName();
     public abstract Owner getOwner();
-    public abstract void setOwner(owner:Owner,recursive:bool);
+    public abstract void setOwner(Owner owner, boolean recursive);
 
     public abstract int getSize();
     public abstract String getContent();
-    public abstract void appendContent(name: string);
+    public abstract void appendContent(String name);
 
     public abstract boolean isComposite();
 

@@ -3,26 +3,13 @@ package td4.vendingmachine.src.patterns.state;
 import td4.Ampoule.AmpouleEteinte;
 import td4.Ampoule.AmpouleState;
 
-public class SimpleVendingMachineStateBegin implements SimpleVendingMachineState{
+public class SimpleVendingMachineStateBegin   {
 
-    private static final SimpleVendingMachineState INSTACE = new SimpleVendingMachineStateBegin;
+    private static final SimpleVendingMachineState INSTANCE = new SimpleVendingMachineStateBegin;
 
-    public static SimpleVendingMachineState getINSTACE() {
-        return INSTACE;
+    public static SimpleVendingMachineState getInstance() {
+        return INSTANCE;
     }
 
-    @Override
-    public void give(SimpleVendingMachineContext c, int money) throws IncorrectStateException {
 
-    }
-
-    @Override
-    public void askCoffee(SimpleVendingMachineContext c) throws IncorrectStateException {
-
-    }
-
-    @Override
-    public void askTea(SimpleVendingMachineContext c) throws IncorrectStateException {
-
-    }
 }
